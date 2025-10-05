@@ -9,9 +9,6 @@ from typing import List, Tuple, Optional
 # It includes the feature extractor (CNNs), the context network (Transformer),
 # and the components required for the self-supervised pre-training objective,
 # such as the quantizer and contrastive loss.
-#
-# Based on the paper: "wav2vec 2.0: A Framework for Self-Supervised Learning of Speech Representations"
-# (https://arxiv.org/abs/2006.11477)
 # ==============================================================================
 
 
