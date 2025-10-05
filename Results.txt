@@ -1,0 +1,243 @@
+python finetune.py --mode subset_then_full --subset_classes 3 4 9      
+Tensorboard log directory: runs\finetuning\2025-10-03_15-44-12_1_Finetune_Full_Wav2Vec2_subset_phase
+--- Training 1_Finetune_Full_Wav2Vec2 (subset) ---
+Epoch [1/20], Loss: 0.4295, Val Accuracy: 0.8889
+Epoch [2/20], Loss: 0.2197, Val Accuracy: 0.8511
+Epoch [3/20], Loss: 0.1857, Val Accuracy: 0.9156
+Epoch [4/20], Loss: 0.1571, Val Accuracy: 0.8200
+Epoch [5/20], Loss: 0.1316, Val Accuracy: 0.8511
+Epoch [6/20], Loss: 0.1230, Val Accuracy: 0.9444
+Epoch [7/20], Loss: 0.0717, Val Accuracy: 0.9178
+Epoch [8/20], Loss: 0.0809, Val Accuracy: 0.9422
+Epoch [9/20], Loss: 0.0890, Val Accuracy: 0.9089
+Epoch [10/20], Loss: 0.0919, Val Accuracy: 0.9289
+Epoch [11/20], Loss: 0.0335, Val Accuracy: 0.9400
+Epoch [12/20], Loss: 0.0093, Val Accuracy: 0.9378
+Epoch [13/20], Loss: 0.0068, Val Accuracy: 0.9444
+Epoch [14/20], Loss: 0.0061, Val Accuracy: 0.9444
+Epoch [15/20], Loss: 0.0056, Val Accuracy: 0.9444
+Epoch [16/20], Loss: 0.0081, Val Accuracy: 0.9422
+Epoch [17/20], Loss: 0.0030, Val Accuracy: 0.9422
+Epoch [18/20], Loss: 0.0020, Val Accuracy: 0.9422
+Epoch [19/20], Loss: 0.0032, Val Accuracy: 0.9422
+Epoch [20/20], Loss: 0.0019, Val Accuracy: 0.9422
+Finished Training 1_Finetune_Full_Wav2Vec2 (subset)
+--- Evaluating on Test Set for 1_Finetune_Full_Wav2Vec2 (subset) ---
+--- Results for 1_Finetune_Full_Wav2Vec2 (subset) ---
+Test Accuracy: 95.78%
+Test F1 Score (Macro): 0.9576
+Test AUC (OvR): 0.9950
+Confusion matrix saved to confusion_matrix_1_Finetune_Full_Wav2Vec2_subset.png
+Tensorboard log directory: runs\finetuning\2025-10-03_16-13-05_2_Finetune_FeatureExtractor_subset_phase
+--- Training 2_Finetune_FeatureExtractor (subset) ---
+Epoch [1/20], Loss: 0.5397, Val Accuracy: 0.8067
+Epoch [2/20], Loss: 0.4294, Val Accuracy: 0.8133
+Epoch [3/20], Loss: 0.3820, Val Accuracy: 0.8244
+Epoch [4/20], Loss: 0.3544, Val Accuracy: 0.8356
+Epoch [5/20], Loss: 0.3236, Val Accuracy: 0.8422
+Epoch [6/20], Loss: 0.3103, Val Accuracy: 0.8533
+Epoch [7/20], Loss: 0.2899, Val Accuracy: 0.8600
+Epoch [8/20], Loss: 0.2792, Val Accuracy: 0.8489
+Epoch [9/20], Loss: 0.2701, Val Accuracy: 0.8689
+Epoch [10/20], Loss: 0.2557, Val Accuracy: 0.8600
+Epoch [11/20], Loss: 0.2243, Val Accuracy: 0.8889
+Epoch [12/20], Loss: 0.2133, Val Accuracy: 0.8844
+Epoch [13/20], Loss: 0.2099, Val Accuracy: 0.8911
+Epoch [14/20], Loss: 0.2106, Val Accuracy: 0.8822
+Epoch [15/20], Loss: 0.2071, Val Accuracy: 0.8800
+Epoch [16/20], Loss: 0.2051, Val Accuracy: 0.8844
+Epoch [17/20], Loss: 0.2053, Val Accuracy: 0.8867
+Epoch [18/20], Loss: 0.2047, Val Accuracy: 0.8844
+Epoch [19/20], Loss: 0.2012, Val Accuracy: 0.8800
+Epoch [20/20], Loss: 0.1981, Val Accuracy: 0.8867
+Finished Training 2_Finetune_FeatureExtractor (subset)
+--- Evaluating on Test Set for 2_Finetune_FeatureExtractor (subset) ---
+--- Results for 2_Finetune_FeatureExtractor (subset) ---
+Test Accuracy: 90.22%
+Test F1 Score (Macro): 0.9023
+Test AUC (OvR): 0.9824
+Confusion matrix saved to confusion_matrix_2_Finetune_FeatureExtractor_subset.png
+Tensorboard log directory: runs\finetuning\2025-10-03_16-24-39_3_Finetune_FeatureExtractor_Quantizer_subset_phase
+--- Training 3_Finetune_FeatureExtractor_Quantizer (subset) ---
+Epoch [1/20], Loss: 0.8027, Val Accuracy: 0.7933
+Epoch [2/20], Loss: 0.5730, Val Accuracy: 0.7956
+Epoch [3/20], Loss: 0.5154, Val Accuracy: 0.7978
+Epoch [4/20], Loss: 0.4778, Val Accuracy: 0.8156
+Epoch [5/20], Loss: 0.4395, Val Accuracy: 0.8244
+Epoch [6/20], Loss: 0.4075, Val Accuracy: 0.8422
+Epoch [7/20], Loss: 0.3804, Val Accuracy: 0.8467
+Epoch [8/20], Loss: 0.3650, Val Accuracy: 0.8422
+Epoch [9/20], Loss: 0.3407, Val Accuracy: 0.8378
+Epoch [10/20], Loss: 0.3224, Val Accuracy: 0.8356
+Epoch [11/20], Loss: 0.2984, Val Accuracy: 0.8511
+Epoch [12/20], Loss: 0.2849, Val Accuracy: 0.8644
+Epoch [13/20], Loss: 0.2808, Val Accuracy: 0.8644
+Epoch [14/20], Loss: 0.2764, Val Accuracy: 0.8644
+Epoch [15/20], Loss: 0.2762, Val Accuracy: 0.8578
+Epoch [16/20], Loss: 0.2735, Val Accuracy: 0.8578
+Epoch [17/20], Loss: 0.2689, Val Accuracy: 0.8644
+Epoch [18/20], Loss: 0.2659, Val Accuracy: 0.8644
+Epoch [19/20], Loss: 0.2624, Val Accuracy: 0.8689
+Epoch [20/20], Loss: 0.2634, Val Accuracy: 0.8644
+Finished Training 3_Finetune_FeatureExtractor_Quantizer (subset)
+--- Evaluating on Test Set for 3_Finetune_FeatureExtractor_Quantizer (subset) ---
+--- Results for 3_Finetune_FeatureExtractor_Quantizer (subset) ---
+Test Accuracy: 90.44%
+Test F1 Score (Macro): 0.9044
+Test AUC (OvR): 0.9782
+Confusion matrix saved to confusion_matrix_3_Finetune_FeatureExtractor_Quantizer_subset.png
+Tensorboard log directory: runs\finetuning\2025-10-03_16-37-10_4_Baseline_From_Scratch_subset_phase
+--- Training 4_Baseline_From_Scratch (subset) ---
+Epoch [1/20], Loss: 0.6615, Val Accuracy: 0.7044
+Epoch [2/20], Loss: 0.5585, Val Accuracy: 0.7600
+Epoch [3/20], Loss: 0.5374, Val Accuracy: 0.7778
+Epoch [4/20], Loss: 0.5340, Val Accuracy: 0.7822
+Epoch [5/20], Loss: 0.5182, Val Accuracy: 0.7867
+Epoch [6/20], Loss: 0.4879, Val Accuracy: 0.7889
+Epoch [7/20], Loss: 0.4805, Val Accuracy: 0.7644
+Epoch [8/20], Loss: 0.5021, Val Accuracy: 0.8111
+Epoch [9/20], Loss: 0.4461, Val Accuracy: 0.7933
+Epoch [10/20], Loss: 0.4288, Val Accuracy: 0.7844
+Epoch [11/20], Loss: 0.3846, Val Accuracy: 0.8356
+Epoch [12/20], Loss: 0.3730, Val Accuracy: 0.8400
+Epoch [13/20], Loss: 0.3678, Val Accuracy: 0.8333
+Epoch [14/20], Loss: 0.3636, Val Accuracy: 0.8489
+Epoch [15/20], Loss: 0.3529, Val Accuracy: 0.8489
+Epoch [16/20], Loss: 0.3465, Val Accuracy: 0.8244
+Epoch [17/20], Loss: 0.3407, Val Accuracy: 0.8511
+Epoch [18/20], Loss: 0.3368, Val Accuracy: 0.8556
+Epoch [19/20], Loss: 0.3314, Val Accuracy: 0.8467
+Epoch [20/20], Loss: 0.3298, Val Accuracy: 0.8400
+Finished Training 4_Baseline_From_Scratch (subset)
+--- Evaluating on Test Set for 4_Baseline_From_Scratch (subset) ---
+--- Results for 4_Baseline_From_Scratch (subset) ---
+Test Accuracy: 83.56%
+Test F1 Score (Macro): 0.8358
+Test AUC (OvR): 0.9626
+Confusion matrix saved to confusion_matrix_4_Baseline_From_Scratch_subset.png
+Tensorboard log directory: runs\finetuning\2025-10-03_16-56-16_1_Finetune_Full_Wav2Vec2_full_phase
+--- Training 1_Finetune_Full_Wav2Vec2 (full) ---
+Epoch [1/20], Loss: 0.9663, Val Accuracy: 0.6936
+Epoch [2/20], Loss: 0.5834, Val Accuracy: 0.6667
+Epoch [3/20], Loss: 0.4679, Val Accuracy: 0.6765
+Epoch [4/20], Loss: 0.3892, Val Accuracy: 0.6924
+Epoch [5/20], Loss: 0.3427, Val Accuracy: 0.7292
+Epoch [6/20], Loss: 0.3124, Val Accuracy: 0.7316
+Epoch [7/20], Loss: 0.2735, Val Accuracy: 0.6936
+Epoch [8/20], Loss: 0.2554, Val Accuracy: 0.6740
+Epoch [9/20], Loss: 0.2285, Val Accuracy: 0.7083
+Epoch [10/20], Loss: 0.2019, Val Accuracy: 0.6642
+Epoch [11/20], Loss: 0.0691, Val Accuracy: 0.6998
+Epoch [12/20], Loss: 0.0373, Val Accuracy: 0.6863
+Epoch [13/20], Loss: 0.0228, Val Accuracy: 0.6875
+Epoch [14/20], Loss: 0.0205, Val Accuracy: 0.6985
+Epoch [15/20], Loss: 0.0207, Val Accuracy: 0.6998
+Epoch [16/20], Loss: 0.0119, Val Accuracy: 0.6924
+Epoch [17/20], Loss: 0.0157, Val Accuracy: 0.6973
+Epoch [18/20], Loss: 0.0115, Val Accuracy: 0.7071
+Epoch [19/20], Loss: 0.0094, Val Accuracy: 0.7034
+Epoch [20/20], Loss: 0.0090, Val Accuracy: 0.7059
+Finished Training 1_Finetune_Full_Wav2Vec2 (full)
+--- Evaluating on Test Set for 1_Finetune_Full_Wav2Vec2 (full) ---
+--- Results for 1_Finetune_Full_Wav2Vec2 (full) ---
+Test Accuracy: 73.48%
+Test F1 Score (Macro): 0.7283
+Test AUC (OvR): 0.9363
+Confusion matrix saved to confusion_matrix_1_Finetune_Full_Wav2Vec2_full.png
+Tensorboard log directory: runs\finetuning\2025-10-03_18-24-06_2_Finetune_FeatureExtractor_full_phase
+--- Training 2_Finetune_FeatureExtractor (full) ---
+Epoch [1/20], Loss: 1.2907, Val Accuracy: 0.5110
+Epoch [2/20], Loss: 1.0014, Val Accuracy: 0.5355
+Epoch [3/20], Loss: 0.8921, Val Accuracy: 0.5466
+Epoch [4/20], Loss: 0.8119, Val Accuracy: 0.6017
+Epoch [5/20], Loss: 0.7508, Val Accuracy: 0.5282
+Epoch [6/20], Loss: 0.7047, Val Accuracy: 0.5723
+Epoch [7/20], Loss: 0.6637, Val Accuracy: 0.5882
+Epoch [8/20], Loss: 0.6319, Val Accuracy: 0.5711
+Epoch [9/20], Loss: 0.5998, Val Accuracy: 0.5797
+Epoch [10/20], Loss: 0.5737, Val Accuracy: 0.5858
+Epoch [11/20], Loss: 0.5002, Val Accuracy: 0.5980
+Epoch [12/20], Loss: 0.4872, Val Accuracy: 0.5931
+Epoch [13/20], Loss: 0.4820, Val Accuracy: 0.5993
+Epoch [14/20], Loss: 0.4773, Val Accuracy: 0.6152
+Epoch [15/20], Loss: 0.4727, Val Accuracy: 0.6103
+Epoch [16/20], Loss: 0.4688, Val Accuracy: 0.6152
+Epoch [17/20], Loss: 0.4670, Val Accuracy: 0.6091
+Epoch [18/20], Loss: 0.4618, Val Accuracy: 0.6029
+Epoch [19/20], Loss: 0.4584, Val Accuracy: 0.6176
+Epoch [20/20], Loss: 0.4543, Val Accuracy: 0.6103
+Finished Training 2_Finetune_FeatureExtractor (full)
+--- Evaluating on Test Set for 2_Finetune_FeatureExtractor (full) ---
+--- Results for 2_Finetune_FeatureExtractor (full) ---
+Test Accuracy: 64.40%
+Test F1 Score (Macro): 0.6454
+Test AUC (OvR): 0.9251
+Confusion matrix saved to confusion_matrix_2_Finetune_FeatureExtractor_full.png
+Tensorboard log directory: runs\finetuning\2025-10-03_18-57-46_3_Finetune_FeatureExtractor_Quantizer_full_phase
+--- Training 3_Finetune_FeatureExtractor_Quantizer (full) ---
+Epoch [1/20], Loss: 1.7553, Val Accuracy: 0.3652
+Epoch [2/20], Loss: 1.3507, Val Accuracy: 0.4216
+Epoch [3/20], Loss: 1.1748, Val Accuracy: 0.5221
+Epoch [4/20], Loss: 1.0669, Val Accuracy: 0.5110
+Epoch [5/20], Loss: 0.9887, Val Accuracy: 0.5257
+Epoch [6/20], Loss: 0.9251, Val Accuracy: 0.5331
+Epoch [7/20], Loss: 0.8603, Val Accuracy: 0.5453
+Epoch [8/20], Loss: 0.8211, Val Accuracy: 0.5490
+Epoch [9/20], Loss: 0.7839, Val Accuracy: 0.5490
+Epoch [10/20], Loss: 0.7493, Val Accuracy: 0.5502
+Epoch [11/20], Loss: 0.6756, Val Accuracy: 0.5613
+Epoch [12/20], Loss: 0.6654, Val Accuracy: 0.5600
+Epoch [13/20], Loss: 0.6574, Val Accuracy: 0.5650
+Epoch [14/20], Loss: 0.6524, Val Accuracy: 0.5686
+Epoch [15/20], Loss: 0.6463, Val Accuracy: 0.5576
+Epoch [16/20], Loss: 0.6422, Val Accuracy: 0.5637
+Epoch [17/20], Loss: 0.6368, Val Accuracy: 0.5760
+Epoch [18/20], Loss: 0.6318, Val Accuracy: 0.5723
+Epoch [19/20], Loss: 0.6273, Val Accuracy: 0.5760
+Epoch [20/20], Loss: 0.6236, Val Accuracy: 0.5858
+--- Evaluating on Test Set for 3_Finetune_FeatureExtractor_Quantizer (full) ---
+--- Results for 3_Finetune_FeatureExtractor_Quantizer (full) ---
+Test Accuracy: 61.05%
+Test F1 Score (Macro): 0.6016
+Test AUC (OvR): 0.9141
+Confusion matrix saved to confusion_matrix_3_Finetune_FeatureExtractor_Quantizer_full.png
+Tensorboard log directory: runs\finetuning\2025-10-03_19-34-13_4_Baseline_From_Scratch_full_phase
+--- Training 4_Baseline_From_Scratch (full) ---
+Epoch [1/20], Loss: 1.5347, Val Accuracy: 0.3824
+Epoch [2/20], Loss: 1.3043, Val Accuracy: 0.5208
+Epoch [3/20], Loss: 1.1706, Val Accuracy: 0.5000
+Epoch [4/20], Loss: 1.0819, Val Accuracy: 0.4632
+Epoch [5/20], Loss: 1.0120, Val Accuracy: 0.5025
+Epoch [6/20], Loss: 0.9478, Val Accuracy: 0.5049
+Epoch [7/20], Loss: 0.8950, Val Accuracy: 0.5404
+Epoch [8/20], Loss: 0.8481, Val Accuracy: 0.5208
+Epoch [9/20], Loss: 0.7861, Val Accuracy: 0.5797
+Epoch [10/20], Loss: 0.7620, Val Accuracy: 0.4926
+Epoch [11/20], Loss: 0.6272, Val Accuracy: 0.5833
+Epoch [12/20], Loss: 0.5940, Val Accuracy: 0.6250
+Epoch [13/20], Loss: 0.5836, Val Accuracy: 0.6127
+Epoch [14/20], Loss: 0.5727, Val Accuracy: 0.6189
+Epoch [15/20], Loss: 0.5595, Val Accuracy: 0.6152
+Epoch [16/20], Loss: 0.5516, Val Accuracy: 0.6127
+Epoch [17/20], Loss: 0.5404, Val Accuracy: 0.6238
+Epoch [18/20], Loss: 0.5303, Val Accuracy: 0.6103
+Epoch [19/20], Loss: 0.5221, Val Accuracy: 0.6152
+Epoch [20/20], Loss: 0.5127, Val Accuracy: 0.6066
+Finished Training 4_Baseline_From_Scratch (full)
+--- Evaluating on Test Set for 4_Baseline_From_Scratch (full) ---
+--- Results for 4_Baseline_From_Scratch (full) ---
+Test Accuracy: 64.99%
+Test F1 Score (Macro): 0.6561
+Test AUC (OvR): 0.9170
+Confusion matrix saved to confusion_matrix_4_Baseline_From_Scratch_full.png
+--- Final Comparison Results ---
+                                   Model   Phase  Accuracy  F1_Score   AUC_OvR
+0               1_Finetune_Full_Wav2Vec2  subset  0.957778  0.957612  0.995044
+1            2_Finetune_FeatureExtractor  subset  0.902222  0.902312  0.982385
+2  3_Finetune_FeatureExtractor_Quantizer  subset  0.904444  0.904433  0.978185
+3                4_Baseline_From_Scratch  subset  0.835556  0.835843  0.962644
+4               1_Finetune_Full_Wav2Vec2    full  0.734767  0.728287  0.936298
+5            2_Finetune_FeatureExtractor    full  0.643967  0.645436  0.925112
+6  3_Finetune_FeatureExtractor_Quantizer    full  0.610514  0.601605  0.914058
+7                4_Baseline_From_Scratch    full  0.649940  0.656079  0.917008
+Results table saved to finetuning_comparison_subset_then_full.csv
